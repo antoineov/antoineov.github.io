@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <title>Kidébit</title>
+</head>
+<body>
+    <header>
+        <img id="logo_header" src="img/kidebit_logo_web.png" alt="logo_kitdebit">
+        <div id="ExplicationButton">?</div>
+    </header>
+    <div id="Page1">
+         <div id="InputsContainer">
+            <!-- Ajout de l'input avec icône à droite -->
+            <div class="InputBlock">
+                <input type="text" placeholder="Ajouter un joueur" class="AddPlayerOut" autocapitalize="on">
+                <span class="InputIcon"></span>
+            </div>
+        </div>
+        <button class="InactiveButton" id="PlayButton">
+            Lancer
+            <div class="counter">
+                <img class="icon" src="img/picto_joueur.svg" alt="">
+                <span id="ValidInputCounterText">0</span>
+            </div>
+        </button>
+    </div>
+    <div id="Page2">
+        
+        <!--Template HTML-->
+    </div>
+    <div id="ButtonContainer">
+        <audio id="clickSound" src="/music/pick-92276.mp3"></audio>
+        <audio id="backgroundMusic" src="music/lawhonte.mp3"></audio>
+        <button id="Recommencer">Relancer</button>
+        <button id="NouvellePartie">Nouvelle partie</button>
+    </div>
+    <footer>
+        <p id="Credit">On gatekeep tout les droits ici cassez vous</p>
+    </footer>
+    <template id="card">
+        <div class="cardDesign">
+            <h2></h2>
+            <img id="CardLogo" src="/img/kidebit_logo_outline.png" alt="">
+            <img id="NFCicon" src="img/NFC.png" alt="">
+        </div>
+    </template>
+</body>
+</html>

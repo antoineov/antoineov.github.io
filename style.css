@@ -1,0 +1,299 @@
+/*Typography*/
+@font-face {
+    font-family: "NunitoSans";
+    src: 
+        url("fonts/NunitoSans-VariableFont_YTLC.ttf") format("truetype");
+        font-weight: 200 1000;
+}
+.icon {
+    height: 24px;
+}
+/*Layout*/
+.none{
+    display: none!important;
+}
+body{
+    color: #2D2D41;
+    display: flex;
+    max-width: 600px;
+    min-height: 100vh;
+    margin: 0px auto 0px auto;
+    flex-direction: column;
+    align-items: center;
+    font-family: "NunitoSans";
+    background: url("img/RB-GradientBackground2.png") rgba(218, 217, 227, 0.638) 70% / cover no-repeat ;
+    background-blend-mode: overlay; 
+    transition: 1500ms;
+}
+.bodyPage2{
+    background: url("img/RB-GradientBackground.png") rgba(55, 40, 147, 1) 70% / cover no-repeat ;
+}
+#Page1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 64px;
+    align-items: center;
+    gap: 56px;
+}
+#logo_header {
+    min-width: 150px;
+    width: 30vw;
+    max-width: 300px;
+    margin-top: 36px;
+}
+button {
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    padding: 16px 64px;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #3C36F2;
+    color: white;
+    font-size: 24px;
+    outline: none;
+    border: 0;
+    transition: 300ms;
+}
+.counter {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 18px;
+    font-weight: 400;
+}
+#ValidInputCounterText{
+    margin-top: 2PX;
+}
+button:hover{
+    background-color: #4E4BF8;
+}
+button:active{
+    background-color: #2F2BD8;
+}
+.InactiveButton{
+    background-color: #ABB0FF;
+    pointer-events: none;
+}
+#ExplicationButton{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    
+}
+#ButtonContainer{
+    position: absolute;
+    z-index: 10;
+    max-width: 600px;
+    bottom: 10vh;
+    display: none;
+    margin-top: 200px;
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+}
+button#NouvellePartie{
+    background-color: #F3019C;
+}
+button#NouvellePartie:hover{
+    background-color: #FB2AB6;
+}
+button#NouvellePartie:active{
+    background-color: #D81597;
+}
+button#Recommencer{
+    color: #2D2D41;
+    background-color: #EBECF1;
+}
+button#Recommencer:hover{
+    background-color: #FFFFFF;
+}
+button#Recommencer:active{
+    background-color: #DAD9E3;
+}
+
+footer{
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: -10;
+    mix-blend-mode: luminosity;
+}
+#Credit{
+    text-align: center;
+    bottom: 8px;
+    color: #6C6C89;
+    opacity: 300%;
+}
+
+/*Input*/
+input{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid #D1D1DB;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(18, 18, 23, 0.05);
+    padding: 12px;
+    color: #2D2D41;
+    font-size: 16px;
+    line-height: 30px;
+}
+#InputsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+.InputBlock{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.InputIcon{
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    margin-right: 12px;
+    background-image: url(img/plus.png);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+    pointer-events: none;
+}
+/* Style pour l'input avec icône */
+input:focus{
+    outline-width: 0;
+    border: 1px solid #2D2D41;
+    background-image: none;
+}
+input:focus + .InputIcon{
+    background-image: none;
+    cursor: default;
+}
+input.ValidInput:not(:focus) + .InputIcon{
+    background-image: url(img/trash.png);
+    cursor: pointer;
+    pointer-events: visible;
+}
+input.ValidInput + .InputIcon:hover{
+    background-image: url(img/trashred.png);
+}
+input.ValidInput{
+    border: 1px solid #3C36F2;
+}
+input.ValidInput:focus + .InputIcon{
+    background-image: url(img/vu.png);
+}
+
+/*Card*/
+#Page2{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+    padding-top: 200px;
+    max-width: 332px;
+    transition: 600ms;
+}
+.reaction {
+    text-align: center;
+    margin-top: 10px;
+    z-index: 10;
+    position: absolute;
+    top: 40%;
+}
+
+.reaction img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.cardDesign{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: flex-start;
+    padding: 18px;
+    width: 60vw;
+    max-width: 350px;
+    height: 38vw;
+    max-height: 182px;
+    margin-top: -140px;
+    border-radius: 16px;
+    border: 1.5px solid rgba(218, 217, 227, 0.30);
+    background: linear-gradient(106deg, rgba(255, 255, 255, 0.40) 3.04%, rgba(255, 255, 255, 0.00) 96.05%);
+    backdrop-filter: blur(16.6px);
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+    animation-name: SlideIn;
+}
+@keyframes SlideIn{
+    from{
+        margin-top:-205px
+    }
+    to{
+        margin-top: -140px;
+    }
+}
+@keyframes shrinkFadeOut {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+  }
+  
+  .shrinkFadeOut {
+    animation: shrinkFadeOut 0.5s forwards;
+  }
+  
+h2{
+    color: #FFF;
+    max-width: 85%;
+    overflow: hidden;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0px;
+}
+#CardLogo{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    scale: .5;
+    align-self: center;
+}
+#NFCicon{
+    height: 48px;
+}
+
+/*Responsive*/
+/*Mobile*/
+@media screen and (max-width: 767px) {
+    body{
+        width: 92vw;
+    }
+    #ButtonContainer{
+        width: 92vw;
+    }
+}
