@@ -240,6 +240,7 @@ input.ValidInput:focus + .InputIcon{
     border-radius: 16px;
     border: 1.5px solid rgba(218, 217, 227, 0.30);
     background: linear-gradient(106deg, rgba(255, 255, 255, 0.40) 3.04%, rgba(255, 255, 255, 0.00) 96.05%);
+    -webkit-backdrop-filter: blur(16.6px);
     backdrop-filter: blur(16.6px);
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
