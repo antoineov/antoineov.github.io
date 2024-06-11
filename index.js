@@ -53,9 +53,6 @@ function handleInput(evt) {
         const newInputBlock = lastInputBlock.cloneNode(true); // Clone la div InputBlock existante
         newInputBlock.querySelector(".AddPlayerOut").value = ""; // Vider le nouvel input
         inputsContainer.appendChild(newInputBlock);
-        
-        // Faire défiler jusqu'en bas
-        newInputBlock.scrollIntoView({ behavior: 'smooth' });
     }
 
     // Gestion des classes ValidInput
@@ -201,7 +198,6 @@ recommencerButton.addEventListener('click', function() {
     animateAndSelectCard();
     playClickSound();
 });
-
 
 // Ajout des gestionnaires d'événements
 inputsContainer.addEventListener("input", handleInput);
