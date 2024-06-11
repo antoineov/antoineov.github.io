@@ -207,6 +207,7 @@ input.ValidInput:focus + .InputIcon{
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
+    max-height: 100vh;
     align-items: center;
     padding-top: 200px;
     max-width: 332px;
