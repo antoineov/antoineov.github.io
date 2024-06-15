@@ -92,7 +92,7 @@ function handleInputFocusOut(evt) {
 
 // Function to get a random image from the reactions folder
 function getRandomReactionImage() {
-    const imageCount = 5; // Total number of reaction images available
+    const imageCount = 10; // Total number of reaction images available
     const randomIndex = Math.floor(Math.random() * imageCount) + 1;
     return `img/reactions/reaction${randomIndex}.png`;
 }
